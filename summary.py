@@ -1,10 +1,6 @@
 import spacy
 from collections import Counter
 import math
-keywords = [
-    "speed", "efficiency", "custom", "pipelines", "production", "pre-trained", "deep learning", "TensorFlow", "PyTorch",
-    "NLP", "spaCy", "language", "model", "text", "analysis", "framework", "researchers", "companies"
-]
 nlp = spacy.load("en_core_web_sm")
 text = """
 spaCy is a popular open-source library for Natural Language Processing in Python.
@@ -34,11 +30,8 @@ for sent in sentences:
         if word.text.lower() in word_freq:
             score += word_freq[word.text.lower()]
     for ent in sent.ents:
-        score += 1.5
-    # إضافة وزن للجمل التي تحتوي على كلمات مفتاحية مهمة
-    for word in sent:
-        if word.text.lower() in [k.lower() for k in keywords]:
-            score += 1.2
+            
+            score += 1.5
     sentence_scores[sent] = score
 
 
