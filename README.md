@@ -1,4 +1,4 @@
-#📝 Text Summarizer using spaCy
+📝 Text Summarizer using spaCy
 
 📖 Project Description
 
@@ -8,21 +8,33 @@ It analyzes the input text, calculates word frequencies, and identifies the most
 🚀 How It Works
 
 The user enters a text into the text variable inside the program.
+
 The program uses a spaCy model to:
-Detect sentences, words, and entities
-Build a frequency distribution of the most important words
-Each sentence is scored based on:
-Word frequency
+
+1-Detect sentences, words, and entities
+
+2-Build a frequency distribution of the most important words
+
+Each sentence is scored based on: Word frequency
+
 The top-scoring sentences are selected and combined to form a smart summary of the text.
+
 📦 Requirements
-Python
-spaCy
-spaCy English model (en_core_web_sm)
-Built-in Python libraries:
-collections
-math
+
+1-Python
+
+2-spaCy
+
+3-spaCy English model (en_core_web_sm)
+
+4-Built-in Python libraries: 1-collections 2-math
+
 ⚙️ Installation & Setup
-Clone this repository.
-Install dependencies.
-Put the text you want to summarize inside the text variable in summary.py.
-Run the program.
+ 
+1-Clone this repository.
+
+2-Install dependencies.
+
+3-Put the text you want to summarize inside the text variable in summary.py.
+
+4-Run the program.
