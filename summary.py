@@ -30,8 +30,7 @@ for sent in sentences:
         if word.text.lower() in word_freq:
             score += word_freq[word.text.lower()]
     for ent in sent.ents:
-            
-            score += 1.5
+        score += 1.5
     sentence_scores[sent] = score
 
 
@@ -53,7 +52,3 @@ for sent, score in sentence_scores.items():
 summary = " ".join(summary_sentences)
 print("SMART SUMMARY:")
 print(summary)
-
-
-
-
