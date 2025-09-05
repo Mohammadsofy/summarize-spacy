@@ -1,9 +1,12 @@
-📝 Text Summarizer using spaCy
+#📝 Text Summarizer using spaCy
+
 📖 Project Description
+
 This project is a simple yet effective Python program that generates summaries for English texts using the spaCy library.
 It analyzes the input text, calculates word frequencies, and identifies the most important sentences.
 
 🚀 How It Works
+
 The user enters a text into the text variable inside the program.
 The program uses a spaCy model to:
 Detect sentences, words, and entities
